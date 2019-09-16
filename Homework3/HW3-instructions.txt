@@ -1,0 +1,64 @@
+Homework #3 COT4930
+
+Instructor: Dr. K. Weiss
+
+You are to create a public class called Matrix. The Matrix class has the following definition:
+
+A 3 input constructor - 
+Matrix(int row, int column, double x[])
+The input parameter row must be >= 0.
+The input parameter column must be >= 0.
+The size of the x array must be equal to (row * column).
+If any of the input parameters are in error, then an unchecked MatrixFormatException is thrown.
+The constructor will populate a structure that contains the matrix data with the
+data from the x array. The data in the x array is in row format, meaning if the column size
+is 5, then the first 5 array elements represent the first row data. the next 5 elements represent
+the 2nd row data and so on. You can use any data structure to store the matrix data. Each constructed
+object must maintain its own data structure independent of any other object.
+
+A method called int getNumberRows() which will return the number of rows in the Matrix object.
+
+A method called int getNumberColumns() which will return the number of columns in the Matrix object.
+
+A method called Matrix getTranspose() which will return the transpose of the Matrix object.
+This method must create and return a new Matrix object and not modify the current object.
+
+A method called boolean equals(Matrix m) which will return true if the 2 objects are equal
+(meaning rows, columns, and data all the same), otherwise returns false.
+
+You are to create a public class called MatrixFormatException which supports an unchecked exception
+for the Matrix class. The MatrixFormatException and the Matrix classes should be in separate files.
+
+
+Compile your program with the MatrixFormatException class, Matrix class, and the MatrixTester class which 
+is supplied to you.
+Your program must run to completion and pass all the test cases. Make sure to handle all exceptions
+that might occur so your program can successfully run.
+
+Add your name to the MatrixTester.java file at the top so your name is displayed.
+Capture a screen image of the program ouput with your name and the result of the test cases.
+
+Files provided:
+MatrixTester.java
+
+Submission to Canvas:
+Create a folder. The folder name should be your last name with the homework number.
+Example of my folder name would be: weiss-hw3
+Put the following files in the folder. 
+1) Your completed Matrix.java file.
+2) Your completed MatrixFormatException.java file.
+2) An image of the output displaying the test case results.
+Now, zip the folder to create a .zip file.
+Submit this single .zip file to Canvas.
+
+Your program must match the listed requirements.
+Your program must compile with no errors or warnings for full credit.
+Your program must run and execute the above listed requirements.
+Your program must follow the Best Practices covered in class for full credit.
+Your program must be adequately commented for full credit.
+Your program must be tested for full credit.
+You  must submit the test images for full credit.
+The program must be submitted on time in order to receive any credit.
+Late submissions will not be accepted or graded.
+All programming assignments are individual work, sharing code is considered cheating.
+
