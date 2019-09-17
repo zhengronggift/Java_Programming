@@ -61,7 +61,7 @@ public class Matrix{
 			for (int k = 0; k < this.row; k++)
 			{
 				x2[z] = array[u][k];
-				System.out.print(x2[z]);
+				//System.out.print(x2[z]);
 				z++;
 			}
 		}
@@ -75,7 +75,7 @@ public class Matrix{
 		for (int i = 0; i < (A.row*A.column); i++)
 		{
 			this.x[i] = A.x[i];
-			System.out.print(this.x[i]);
+		//	System.out.print(this.x[i]);
 		}
 		this.x = A.x;
 		

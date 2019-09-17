@@ -3,7 +3,7 @@ public class MatrixTester
 {
 	public static void main(String args[])
 	{
-		System.out.println("Homework 3 test case results by Your Name");
+		System.out.println("Homework 3 test case results by Rong Zheng");
 
 		int testCount = 1;  // used to track test numbers
 		double[] zzz = new double[0];
