@@ -43,6 +43,7 @@ public class Matrix{
 	{
 		int row2 = 0;
 		int column2 = 0;
+		double [] back = this.x;
 		double [][] array2 = new double[this.row][this.column];
 		double [][] array = new double[this.column][this.row];
 		
@@ -51,37 +52,52 @@ public class Matrix{
 		{
 			for (int k = 0; k < this.column; k++)
 			{
-				array2[u][k] = this.x[y];
+				array2[u][k] = back[y];
+				array[k][u] = array2[u][k];
+				System.out.print(array[k][u]);
 				y++;
 			}
 		}
-		for (int i = 0; i < this.row; i++)
+	/*	for (int i = 0; i < this.row; i++)
 		{
 			for (int k = 0; k < this.column; k++)
 			{
-				array[k][i] = array2[i][k];
+				array[i][k] = array2[k][i];
+				System.out.print(array[i][k]);
 				row2 ++;
 			}
 			column2++;
 		}
-		double [] x2 = new double [row2*column2];
-		for (int z = 0; z < (this.row * this.column); z++)
-		{
-			for (int u = 0; u < this.row; u++)
+		System.out.println();*/
+		int z = 0;
+		double [] x2 = new double [this.row*this.column];
+		//for (int z = 0; z < (this.row * this.column); z++)
+		//{
+			for (int u = 0; u < this.column; u++)
 			{
-				for (int k = 0; k < this.column; k++)
+				for (int k = 0; k < this.row; k++)
 				{
-					x2[z] = array[k][u];
+					x2[z] = array[u][k];
 					System.out.print(x2[z]);
+					z++;
 				}
 			}
+		//}
+		Matrix A = new Matrix(this.column, this.row, x2);
+		int temp = row;
+		A.row = column;
+		A.column = temp;
+		A.x = x2;
+		
+		System.out.println();
+		for (int i = 0; i < (A.row*A.column); i++)
+		{
+			this.x[i] = A.x[i];
+			System.out.print(this.x[i]);
 		}
-		//Matrix A;
-
-		this.row = column2;
-		this.column = row2;
-		this.x = x2;
-		return this;
+		this.x = A.x;
+		
+		return A;
 	}
 	public boolean equals(Matrix m)
 	{

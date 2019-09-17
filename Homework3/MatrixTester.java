@@ -38,15 +38,15 @@ public class MatrixTester
 		// test 3 input constructor with no errors
 		Matrix c = null;
 		double[] aaa = {10,11,12,13,14,15,16,17,18,19,20,21,22,23,24};
-	//	try
-	//	{
+		try
+		{
 			c = new Matrix(5, 3, aaa);
 			System.out.println("Test Case " + testCount + " Passed");
-	//	}
-	//	catch(MatrixFormatException ee)
-	//	{
+		}
+		catch(MatrixFormatException ee)
+		{
 			System.out.println("Test Case " + testCount + " Failed");
-	//	}
+		}
 		testCount++;
 //6
 		if (c.getNumberRows() == 5)
@@ -77,15 +77,18 @@ public class MatrixTester
 		// test 3 input constructor with errors
 		Matrix e = null;
 		double[] bbb = {10,11,12,13,14,15,16,17,18,19,20,21,22,23};
-//		try
-//		{
-		//	e = new Matrix(5, 3, bbb);
+		e = new Matrix(5, 3, bbb);
+		
+		try{
+			e = new Matrix(5, 3, bbb);
 			System.out.println("Test Case " + testCount + " Failed");
-//		}
-//		catch(MatrixFormatException ee)
-//		{
+		}
+		catch
+		(MatrixFormatException ee)
+		{
+			System.out.println(ee);
 			System.out.println("Test Case " + testCount + " Passed");
-//		}
+		}
 		testCount++;
 //11
 		// test equals method
