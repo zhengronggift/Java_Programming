@@ -3,14 +3,14 @@ public class Matrix{
 	private int column;
 	private double x[];
 
-	public Matrix (int row, int column, double x[])
+	public Matrix (int row, int column, double x[]) throws MatrixFormatException
 	{
 		this.row = row;
 		this.column = column;
 		this.x = new double[x.length];
 		this.x = x;
-		/*double [][] array = new double [row][column];
-		for ( int i = 0; i < (row*column); i++)
+		double [][] array = new double [row][column];
+		/*for ( int i = 0; i < (row*column); i++)
 		{
 			for (int u = 0; u < row; u++)
 			{
@@ -20,6 +20,10 @@ public class Matrix{
 				}
 			}
 		}*/
+		if ( (this.row * this.column) != this.x.length)
+		{
+			throw new MatrixFormatException("Wrong Input");
+		}
 	}
 	
 	//return the number of rows in the Matrix object.
