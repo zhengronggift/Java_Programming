@@ -4,6 +4,7 @@ public class ManageDB extends EmployeeDB {
 	// Member variables
 	private int number;
 	private String fileName;
+	private String[][]record;
 	
 	// Constructors
 	ManageDB(int number, String fileName)
@@ -14,6 +15,7 @@ public class ManageDB extends EmployeeDB {
 		long fileLength;
 		String fileString = "No information was read";
 		BufferedReader in = null;
+		record = new String [number][3];
 		try
 		{
 			File f = new File(readFileString);
@@ -61,14 +63,10 @@ public class ManageDB extends EmployeeDB {
 
 		
 		String [] lines = fileString.split("[\\^]");
-	/*	for(int i=0;i<lines.length;i++){
-		    if(lines[i].startsWith("^")){
-				System.out.println(lines[i]);
-		        lines[i]="";
-		    }
-		}*/
         // Display result parts.
 		String num = "";
+    	int i = 0;
+    	String record2[] = new String[20];
         for (String part : lines) {
           //  System.out.println(part);
             if(part.length() > 4)
@@ -79,17 +77,16 @@ public class ManageDB extends EmployeeDB {
                 {
                     int res = Integer.parseInt(num);
                     System.out.println(res);
+                    record2[i] = part.substring(4, part.length());
                 }
                 catch (NumberFormatException | NullPointerException nfe)
                 {
                 	part = "";
                 }
-
             }
             System.out.println(part);
-
+            i++;
         }
-
 	}
 /*	
 	// returns the name of Employee at i index
