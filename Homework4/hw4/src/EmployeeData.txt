@@ -1,0 +1,4 @@
+^0000age=23^0000name=Jane^0000salary=1000000.98^0005age=20^0005name=Joe^0005salary=11888.22^0002age=29^0002name=Joann^0002salary=50000.8
+^00a1age=36^0001name=Jerry^0001salary=100000^0004age=25^0003age=3q2^0004salary=1177.22^0w03name=Joan
+^0004name=John^0003salary=100a00a
+

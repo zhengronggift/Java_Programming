@@ -1,0 +1,88 @@
+Homework #4 COT4930
+
+Instructor: Dr. K. Weiss
+
+You are to create a class called ManageDB. The ManageDB class will have a 2 input constructor
+that has the following definition:
+ManageDB(int number, String fileName)
+
+The constructor will create an array of EmployeeDB objects of length "number".
+The constructor will read the file located at "fileName" and extract the information from that
+file to populate a database of EmployeeDB objects. The file contains information on the
+EmployeeDB objects. This information is contained in records. 
+
+The format of each record is as follows:
+
+^ "index of employee" "name of field" = "value of field"
+
+Each record will start with a '^' character.
+The "index of employee" is always a 4 character field representing a positive integer.
+The "name of field" is the name of the field to be populated for a EmployeeDB object.
+There is a delimiter between the "name of field" and the "value of field" which is '='.
+The "value of field" is the character string representing the value of the field specified in "name of field".
+
+The valid "name of field" strings are:
+"age"
+"name"
+"salary"
+
+For each "name of field" the "value of field" will be of the following type:
+age  -  integer
+name - String
+salary - double
+
+An example of a valid record is as follow:
+^0002age=24
+
+This record would set the 0002 indexed EmployeeDB object age to 24.
+
+You can assume that a record is formatted correctly. That is there will always be a ^, =, and a valid
+"name of field". However, the "index of employee" may not have a valid number (either out of range or
+not a number). The "value of field" may also be invalid if a number is specified. The name
+"value of field" will always have a valid String value (there are no errors for this field).
+If there is an error in the "index of employee" or the "value of field" portion then ignore the
+record and decode the next record. If the "index of employee" portion is out of range then ignore that
+record.
+
+The EmployeeDB class is provided for you. Use the EmployeeDB class to create the EmployeeDB array and track
+the information for each Employee.
+
+You need to create 3 public methods for the ManageDB class.
+public String getName(int i) // returns the name of Employee at i index
+public int getAge(int i)    // returns the age of Employee at i index
+public double getSalary(int i)   // returns the salary of Employee at i index
+
+Compile your program with the EmployeeDB class and the DBTester class which are both supplied to you.
+Your program must run to completion and pass all the test cases. Make sure to handle all exception
+that might occur so your program can successfully run. The file to read is called "EmployeeData.txt"
+which is provided to you. Place this file in the working directory of your project (the base directory
+of your package).
+
+Add your name to the DBTester.java file at the top so your name is displayed.
+Capture a screen image of the program ouput with your name and the result of the test cases.
+
+Files provided:
+EmployeeDB.java
+DBTester.java
+EmployeeData.txt
+
+Submission to Canvas:
+Create a folder. The folder name should be your last name with the homework number.
+Example of my folder name would be: weiss-hw4
+Put the following files in the folder. 
+1) Your completed ManageDB.java file.
+2) An image of the output displaying the test case results.
+Now, zip the folder to create a .zip file.
+Submit this single .zip file to Canvas.
+
+Your program must match the listed requirements.
+Your program must compile with no errors or warnings for full credit.
+Your program must run and execute the above listed requirements.
+Your program must follow the Best Practices covered in class for full credit.
+Your program must be adequately commented for full credit.
+Your program must be tested for full credit.
+You  must submit the test images for full credit.
+The program must be submitted on time in order to receive any credit.
+Late submissions will not be accepted or graded.
+All programming assignments are individual work, sharing code is considered cheating.
+
