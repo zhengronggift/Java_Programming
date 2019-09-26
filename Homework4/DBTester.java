@@ -5,7 +5,7 @@ public class DBTester
 
 	public static void main(String args[ ])
 	{
-		System.out.println("Homework 4 test case results by Your Name");
+		System.out.println("Homework 4 test case results by Rong Zheng");
 
 		ManageDB m = new ManageDB(5, "EmployeeData.txt");
 		boolean result;
