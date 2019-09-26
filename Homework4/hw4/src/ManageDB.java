@@ -1,5 +1,6 @@
 
 import java.io.*;
+
 public class ManageDB extends EmployeeDB {
 	// Member variables
 	private int number;
@@ -70,13 +71,13 @@ public class ManageDB extends EmployeeDB {
 				System.out.println("IOException when closing the read file " + e);
 			}
 		}
-		//System.out.println(fileString);
+		System.out.println(fileString);
 
 		
-		String [] lines = fileString.split("[\\^]");
+	String [] lines = fileString.split("[\\^]");
 		
         // Display result parts.
-		String num = "";
+	String num = "";
     	//String record2[] = new String[20];
         for (String part : lines) {
           //  System.out.println(part);
