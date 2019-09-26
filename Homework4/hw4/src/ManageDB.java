@@ -1,4 +1,7 @@
-
+/*
+Rong Zheng
+Homework4
+*/
 import java.io.*;
 
 public class ManageDB extends EmployeeDB {
@@ -71,7 +74,7 @@ public class ManageDB extends EmployeeDB {
 				System.out.println("IOException when closing the read file " + e);
 			}
 		}
-		System.out.println(fileString);
+		//System.out.println(fileString);
 
 		
 	String [] lines = fileString.split("[\\^]");
