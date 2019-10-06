@@ -1,0 +1,88 @@
+Homework #5 COT4930
+
+Instructor: Dr. K. Weiss
+
+Task #1
+You are to create an abstract class called Employee. The Employee class has the following definition:
+1) The Employee class will track the name, base salary, and the password of the employee.
+2) Default constructor - public Employee(), this will set the name to "", and the base salary to 0.
+3) constructor - public Employee(String n, double s) - n is the name and s is the base salary.
+4) public String getName() - returns the name of the employee.
+5) public double getBaseSalary() - returns the base salary of the employee.
+6) protected void setPW(String p) - sets the password of the employee if it meets the correct criteria.
+If the password does not meet the criteria then an IllegalArgumentException is thrown.
+7) public boolean isPasswordMatch(String s) - if a valid password has been set and s matches the employee
+password then return true, otherwise return false.
+8) public boolean checkPassword(String s) - will be an abstract method.
+9) public double getSalary() - will be an abstract method.
+All variables must be private.
+
+Additionally, create a class called Manager that is a subclass of Employee with the following definition:
+1) The Manager class will track additional compensation called bonus.
+2) Default constructor - public Manager(), this will set the name to "", the base salary to 0, and the bonus to 0.
+3) constructor - public Manager(double b, String n, double base) - n is the name, b is the bonus, and base is the base salary.
+4) public boolean checkPassword(String s) - The manager password must have the following to be valid.
+The password must be 10 or more characters, have at least one number, at least one small letter, at least one capital
+letter, and can only contain numbers and letters. Return true if s meets the criteria otherwise false.
+Note the password criteria is unique to the Manager.
+5) public double getSalary() - This will return the addition of the base salary and the bonus.
+All variables must be private.
+
+Additionally, create a class called TechnicalStaff that is a subclass of Employee with the following definition:
+1) The TechnicalStaff class has no additional information to track.
+2) Default constructor - public TechnicalStaff(), this will set the name to "" and the base salary to 0.
+3) constructor - public TechnicalStaff(String n, double base) - n is the name, and base is the base salary.
+4) public boolean checkPassword(String s) - The TechnicalStaff password must have to following to be valid.
+The password must be 8 or more characters, have at least one number, at least one letter, 
+and can only contain numbers and letters. Return true if s meets the criteria otherwise false.
+Note the password criteria is unique to the TechnicalStaff.
+5) public double getSalary() - This will return the base salary.
+All variables must be private.
+
+Task #2
+You are to create a class called MouseProcessing that implements the MouseListener with the following definition:
+1) constructor - public MouseProcessing(int x, int y, int w, int h) where x, y, w, and h define a rectangle region.
+x and y correspond to the starting point (upper left hand corner of the rectangle region). w is the width and
+h is the height. Therefore the lower right corner of the rectangle region is x+w-1 and y+h-1 inclusive.
+2) The MouseProcessing class determine whether a mouse has been clicked within the specified rectangle region.
+It will do this by implementing the mouseClicked(MouseEvent e). All the other methods for the MouseListener
+interface do not need any specific processing (no code needed, but still need a default implementation).
+the total number of mouse clicks is tracked along with how many clicks were within the rectangle region.
+3) public int getClicksInRegion() will return the number of mouse clicks within the rectangle region.
+4) public double getTotalClicks() will return the total number of mouse clicks.
+
+
+Each class should go in a separate file.
+
+Compile your program with the EmployeeTester class which is both supplied to you.
+Your program must run to completion and pass all the test cases. Make sure to handle all exception
+that might occur so your program can successfully run.
+
+The EmployeeTester class will simulate mouse clicks for the MouseProcessing objects.
+
+Add your name to the EmployeeTester.java file at the top so your name is displayed.
+Capture a screen image of the program ouput with your name and the result of the test cases.
+
+Files provided:
+EmployeeTester.java
+
+Submission to Canvas:
+Create a folder. The folder name should be your last name with the homework number.
+Example of my folder name would be: weiss-hw5
+Put the following files in the folder. 
+1) Your completed Employee.java, Manager.java, TechnicalStaff.java, and MouseProcessing.java files.
+2) An image of the output displaying the test case results.
+Now, zip the folder to create a .zip file.
+Submit this single .zip file to Canvas.
+
+Your program must match the listed requirements.
+Your program must compile with no errors or warnings for full credit.
+Your program must run and execute the above listed requirements.
+Your program must follow the Best Practices covered in class for full credit.
+Your program must be adequately commented for full credit.
+Your program must be tested for full credit.
+You  must submit the test images for full credit.
+The program must be submitted on time in order to receive any credit.
+Late submissions will not be accepted or graded.
+All programming assignments are individual work, sharing code is considered cheating.
+
