@@ -1,0 +1,51 @@
+Homework #6 COT4930
+
+Instructor: Dr. K. Weiss
+
+
+You are to design a class called MyGradesUI that will create a Window User interface for 
+the MyGrades class which is provided for you.
+The user interface must contain the minimum UI components:
+1) A JButton to trigger the entry for the Final Exam.
+2) A JButton to trigger the entry for the Midterm Exam.
+3) A JButton to trigger the entry for a Homework assignment.
+4) Each grade will be entered in a JTextField component. There will only be one 
+JTextField component in the User Interface.
+5) The status of each entry will be displayed in a JTextArea component.
+The initial text in the JTextArea will be your name.
+6) A JButton to get the final averaged grade. These results will be displayed in the JTextArea.
+
+Each button will have an appropriate title.
+The MyGrades class will be used to store the grades and to find the final averaged grade.
+The MyGrades class will not be changed. You get to use whatever Layout Manager you want and
+design the User Interface the way you feel is the best looking and most user friendly ensuring
+that the requirements above are met. You should put both the MyGrades.java and the MyGradesUI
+in the edu.fau.COT4930 package.
+
+
+Files provided:
+MyGrades.java
+
+Submission to Canvas:
+Create a folder. The folder name should be your last name with the homework number.
+Example of my folder name would be: weiss-hw6
+Put the following files in the folder. 
+1) Your completed MyGradesUI.java file.
+2) Images of the output displaying the results.
+   a) One image of the program start showing your name.
+   b) One image after a grade was entered.
+   c) One image after the final grade was requested.
+Now, zip the folder to create a .zip file.
+Submit this single .zip file to Canvas.
+
+Your program must match the listed requirements.
+Your program must compile with no errors or warnings for full credit.
+Your program must run and execute the above listed requirements.
+Your program must follow the Best Practices covered in class for full credit.
+Your program must be adequately commented for full credit.
+Your program must be tested for full credit.
+You  must submit the test images for full credit.
+The program must be submitted on time in order to receive any credit.
+Late submissions will not be accepted or graded.
+All programming assignments are individual work, sharing code is considered cheating.
+
