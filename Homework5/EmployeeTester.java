@@ -1,4 +1,3 @@
-
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import javax.swing.JFrame;
@@ -8,7 +7,7 @@ public class EmployeeTester
 
 	public static void main(String args[ ])
 	{
-		System.out.println("Homework 5 test case results by Your Name");
+		System.out.println("Homework 5 test case results by Rong Zheng");
 
 		int testCount = 1;  // used to track test numbers
 
@@ -249,19 +248,19 @@ public class EmployeeTester
 		
 		// Tests for the MouseProcessing class
 		MouseProcessing mp = new MouseProcessing(10, 10, 50, 50);
-		//MouseListener nmp = mp;
+		MouseListener nmp = mp;
 
   		JFrame f = new JFrame("N");
-		//MouseEvent e = new MouseEvent(f, MouseEvent.MOUSE_PRESSED, 0, MouseEvent.BUTTON1_MASK, 50, 50, 1, false, MouseEvent.BUTTON1);
-		//mp.mouseClicked(e);
-		//e = new MouseEvent(f, MouseEvent.MOUSE_PRESSED, 0, MouseEvent.BUTTON1_MASK, 10, 10, 1, false, MouseEvent.BUTTON1);
-		//mp.mouseClicked(e);
-		//e = new MouseEvent(f, MouseEvent.MOUSE_PRESSED, 0, MouseEvent.BUTTON1_MASK, 59, 59, 1, false, MouseEvent.BUTTON1);
-		//mp.mouseClicked(e);
-		//e = new MouseEvent(f, MouseEvent.MOUSE_PRESSED, 0, MouseEvent.BUTTON1_MASK, 60, 59, 1, false, MouseEvent.BUTTON1);
-		//mp.mouseClicked(e);
-		//e = new MouseEvent(f, MouseEvent.MOUSE_PRESSED, 0, MouseEvent.BUTTON1_MASK, 59, 60, 1, false, MouseEvent.BUTTON1);
-		//mp.mouseClicked(e);
+		MouseEvent e = new MouseEvent(f, MouseEvent.MOUSE_PRESSED, 0, MouseEvent.BUTTON1_MASK, 50, 50, 1, false, MouseEvent.BUTTON1);
+		mp.mouseClicked(e);
+		e = new MouseEvent(f, MouseEvent.MOUSE_PRESSED, 0, MouseEvent.BUTTON1_MASK, 10, 10, 1, false, MouseEvent.BUTTON1);
+		mp.mouseClicked(e);
+		e = new MouseEvent(f, MouseEvent.MOUSE_PRESSED, 0, MouseEvent.BUTTON1_MASK, 59, 59, 1, false, MouseEvent.BUTTON1);
+		mp.mouseClicked(e);
+		e = new MouseEvent(f, MouseEvent.MOUSE_PRESSED, 0, MouseEvent.BUTTON1_MASK, 60, 59, 1, false, MouseEvent.BUTTON1);
+		mp.mouseClicked(e);
+		e = new MouseEvent(f, MouseEvent.MOUSE_PRESSED, 0, MouseEvent.BUTTON1_MASK, 59, 60, 1, false, MouseEvent.BUTTON1);
+		mp.mouseClicked(e);
 
 		if (mp.getClicksInRegion() == 3)
 			System.out.println("Test Case " + testCount + " Passed");
