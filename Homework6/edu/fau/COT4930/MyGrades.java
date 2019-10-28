@@ -1,4 +1,4 @@
-//package edu.fau.COT4930;
+package edu.fau.COT4930;
 public class MyGrades
 {
 	// Constructors
