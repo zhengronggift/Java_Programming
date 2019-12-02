@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"edu.fau.COT4930","c":"Player","l":"getName()"},{"p":"edu.fau.COT4930","c":"Player","l":"Player()","url":"%3Cinit%3E()"},{"p":"edu.fau.COT4930","c":"Player","l":"Player(String)","url":"%3Cinit%3E(java.lang.String)"},{"p":"edu.fau.COT4930","c":"Player","l":"setName(String)","url":"setName(java.lang.String)"}]
